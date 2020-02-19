@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>HW2</title>
+</head>
+<body>
+  <div id="div01">
+    <form  method="post" id="employee" action="employee.php">
+        <fieldset> 
+          <legend>Add an Employee</legend>
+          <div>
+            <label for="firstname">First name:</label><br>
+            <input type="text" name="firstname" id="firstname" required>
+          </div>
+          <div>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" name="lastname" id="lastname" required>
+          </div>
+          <div>
+            <label>Department:</label><br>
+            <select name="dept">
+              <option value="SA">Software Analyst</option>
+              <option value="IT" selected>IT</option>
+              <option value="SE">Software Engineer</option>
+              <option value="WE">Web Engineer</option>
+              <option value="NA">Network Administrator</option>
+            </select>
+          </div>
+          <input type="submit" name="submit" id="button" value="Submit">
+          <br>
+        </fieldset>
+    </form>
+  </div>
+</body>
+</html>
