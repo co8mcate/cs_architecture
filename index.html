@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css" />
-    <title>HW2</title>
+    <title>index</title>
   </head>
   <body>
     <div id="div01">
-      <form method="post" id="employee" action="">
+      <form method="post" id="theForm" action="">
         <fieldset>
           <legend>Add an Employee</legend>
           <div>
@@ -19,7 +19,7 @@
             <input type="text" name="lastname" id="lastname" required />
           </div>
           <div>
-            <label>Department:</label><br />
+            <label for="department">Department:</label><br />
             <select name="dept">
               <option value="SA">Software Analyst</option>
               <option value="IT" selected>IT</option>
@@ -28,19 +28,41 @@
               <option value="NA">Network Administrator</option>
             </select>
           </div>
-          <input
-            type="submit"
-            name="submit"
-            id="button"
-            value="Submit"
-            onsubmit="employEntry()"
-          />
-          <br />
+          <div>
+            <input
+              type="submit"
+              id="button-submit"
+            />
+          </div>
         </fieldset>
       </form>
-    </div>
-    <br />
-    <p id="result"></p>
+      <form class="output">
+        <div id="out-header">
+          <h1>Employee added</h1>
+        </div>
+        <div>
+          <label id="out-name">Name:</label>
+          <br />
+        </div>
+        <div>
+          <label id="out-department">Department:</label>
+          <br />
+        </div>
+        <div>
+          <label id="out-employeeid">Employee ID:</label>
+          <br />
+        </div>
+        <div>
+          <label id="out-hiredate">Hire Date:</label>
+          <br />
+        </div>
+        <div>
+          <label id="out-totalemployees">Total Employees:</label>
+          <br /><br />
+        </div>
+        <div>
+          <label id="out-browserinfo"></label>
+        </div>
+      <script src="employee.js"></script>
   </body>
-  <script src="employee.js"></script>
 </html>
