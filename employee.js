@@ -1,3 +1,4 @@
-var d = new Date();
-d.setFullYear(2020);
-document.getElementById("result").innerHTML = d;
+function employEntry(myfrm) {
+  var d = new Date();
+  document.getElementById("result").innerHTML = d;
+}
